@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset=UTF-8>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="personalpage.css">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+	$('#myTab a').click(function (e) {
+		e.preventDefault()
+		$(this).tab('show')
+	})
+	</script>
+</head>
+
+<body>
+	<header>
+		<div class="image">
+			<div class= "logo" style="float:left">
+				<img  src="logo.jpg" width="300" height="100">
+			</div>
+			<div class="fb-login-button" data-max-rows="1" data-size="xlarge" data-show-faces="false" data-auto-logout-link="true" >༼ つ ◔ ౪◔ ༽つ登入</div>
+		</div>
+
+	</header>
+	
+	<article>
+		<div class="person">
+		<span class="manto">༼ つ ◔ ౪◔ ༽つ</span>
+		<span class="title">
+			個人頁面</span>
+</div>
+		<!-- Nav tabs -->
+		<div class="record">
+		<ul class="nav nav-tabs">
+			<li class="active"><a href="#home" data-toggle="tab" >我的新聞紀錄</a></li>
+			<li><a href="#profile" data-toggle="tab">我的社論紀錄</a></li>
+		</ul>
+
+
+		<!-- Tab panes -->
+		<div class="tab-content">
+			<div class="tab-pane fade in active" id="home">
+
+				<div class="history">
+					<a href="http://goo.gl/IvLd7u">沒有核四之後的下一步</a>
+				</div>
+
+			</div>
+			<div class="tab-pane fade" id="profile">
+
+				<div class="respond">
+					<a href="http://goo.gl/Q09tJT">《社論》核四存與廢 請雙方都說實話</a>
+				</div>
+
+			</div>
+		</div>
+
+</div>
+
+	</article>
+	
+	<footer>
+		網站團隊介紹:<br>
+		新聞，聞異文！<br>
+		讓你聞見不一樣的觀點！<br>
+
+		<div class="fbshare">
+			<a href="javascript: void(window.open('http://www.facebook.com/share.php?u='.concat(encodeURIComponent(location.href)) ));">按此分享於臉書</a>
+		</div>
+
+	</footer>
+
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) return;
+		js = d.createElement(s); js.id = id;
+		js.src = "http://connect.facebook.net/zh_TW/sdk.js#xfbml=1&appId=1484080315156272&version=v2.0";
+		fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+
+	<script>
+	var fbhtml_url=window.location.toString();
+	</script>
+</body>
+</html>
